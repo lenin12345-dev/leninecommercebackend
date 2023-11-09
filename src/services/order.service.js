@@ -13,7 +13,7 @@ async function createOrder(user, shippAddress) {
     address.user = user;
     await address.save();
 
-    user.addresses.push(address);
+    // user.addresses.push(address);
     await user.save();
   }
 

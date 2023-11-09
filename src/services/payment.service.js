@@ -41,7 +41,7 @@ const createPaymentLink= async (orderId)=>{
         return resData;
       } catch (error) {
         console.error('Error creating payment link:', error);
-        throw new Error(error.message);
+        throw new Error(error.description);
       }
 }
 
